@@ -46,6 +46,7 @@ class Effect extends Card {
 }
 
 let u1 = new Unit("Armando", 10, 5, 20);
+let u2 = new Unit("Belter", 10, 5, 20);
 let e1 = new Effect("Raise the dead", 2, 3, "power")
 let e2 = new Effect("The plague", 3, -2, "resilience")
 let e3 = new Effect("Hand of god", 2, 10, "resilience")
@@ -59,4 +60,7 @@ u1.showStats();
 console.log("*********");
 e3.play(u1);
 u1.showStats();
+console.log("*********");
+u1.attack(u2);
+u2.showStats();
 console.log("*********");
