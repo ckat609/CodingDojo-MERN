@@ -12,10 +12,12 @@ function App() {
     password: "",
     password_confirmation: "",
   });
+
   return (
     <div className="container w-25">
       <h1>HELLO WORLD</h1>
-      <Form input={state} setInput={setState}></Form>
+      {/* <Form input={state} setInput={setState}></Form> */}
+      <Form value={state} setValue={setState}></Form>
       <Results input={state}></Results>
     </div>
   );
